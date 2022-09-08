@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            font-size: 30px;
+            color: red;
+        }
+        ﻿body, html{
+				width: 100%;
+				height: 100%;
+			}
+			.icp {
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 14px;
+				color: gray;
+			}
+			
+			.icp a {
+				font-size: 14px;
+				color: rosybrown;
+				text-decoration: none;
+			}
+    </style>
+</head>
+
+<body>
+    <h1>Hello1 {{name}}</h1>
+    <div class="box" id="box"></div>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+﻿
+	<div class="icp">icp证：<a href='http://www.beian.miit.gov.cn'>京ICP备19036611号-1</a></div>
+    <script>
+        class Dep {
+            /**
+             * 说明：依赖指的是用到某个数据的地方
+             */
+            constructor() {
+                this.subs = []
+            }
+
+            // 添加依赖
+            addSubs(sub) {
+                this.subs.push(sub)
+            }
+
+            // 添加依赖
+            depend() {
+                console.log("depend")
+                if (window.target) {
+                    this.addSubs(window.target)
+                }
+            }
+
+            // 触发收集的依赖
+            notify() {
+                console.log(this.subs)
+                const subs = this.subs.slice()
+                for (let i = 0; i < subs.length; i++) {
+                    subs[i].update()
+                }
+            }
+
+            // 删除某一个依赖
+            removeSub(sub) {
+                remove(this.subs, sub)
+            }
+        }
+
+        function remove(arr, item) {
+            if (arr.length > 0 && arr.indexOf(item) > -1) {
+                return arr.splice(index, 1)
+            }
+        }
+
+        class Watcher {
+            constructor(vm, expOrFn, cb) {
+                this.vm = vm
+                this.getter = parsePath(expOrFn)
+                this.cb = cb
+                this.value = this.get()
+            }
+
+            // 为了给要修改的数据添加响应式（依赖收集）
+            get() {
+                window.target = this
+                let value = this.getter.call(this.vm, this.vm)
+                window.target = undefined
+                return value
+            }
+
+            /**
+             * 执行update说明setter一定执行了，所以此时this.value是constructor里面初始化的值，是旧值
+             * 在执行一遍this.get()，此时执行getter拿到的就是setter之后的值，是新值
+             */
+            update() {
+                console.log("update")
+                const oldValue = this.value
+                this.value = this.get()
+                this.cb.call(this.vm, this.value, oldValue)
+            }
+        }
+
+        // 如果是数组 直接return，如果是对象名（字符串），进行深度遍历获取要修改的数据
+        function parsePath(path) {
+            const regExp = /[^\w.$]/
+            if (regExp.test(path)) return
+            let objArr = path.split('.')
+            return function (obj) {
+                for (let i = 0; i < objArr.length; i++) {
+                    if (!obj) return
+                    // console.log(obj[objArr[i]])
+                    obj = obj[objArr[i]]
+                }
+                return obj
+            }
+        }
+
+        function defineReactive(data, key, val) {
+            console.log(key)
+            let dep = new Dep()
+            Object.defineProperty(data, key, {
+                enumerable: true,
+                configurable: true,
+                get: function () {
+                    dep.depend()
+                    console.log('defineProperty的get方法', val)
+                    return val
+                },
+                set: function (newVlaue) {
+                    console.log('set方法', val, newVlaue)
+                    if (val == newVlaue) return
+                    val = newVlaue
+                    dep.notify()
+                }
+            })
+        }
+
+        class Observer {
+            constructor(value){
+                this.value = value
+                this.dep = new Dep
+                this.walk(value)
+            }
+
+            walk(obj){
+                const keys = Object.keys(obj)
+                for (let i = 0; i < keys.length; i++) {
+                    defineReactive(obj, keys[i], obj[keys[i]])
+                }
+            }
+        }
+
+        let data = {
+            name: 'zane',
+            blog: 'https://blog.seosiwei.com/',
+            hobby: ['basketball', 'football'],
+        }
+        let render = (vm) => {
+            let box = document.getElementById("box")
+            box.innerHTML = data.name
+        }
+        let render1 = (vm) => {
+            let box1 = document.getElementById("box1")
+            box1.innerHTML = data.blog
+        }
+        let render2 = (vm) => {
+            let box2 = document.getElementById("box2")
+            box2.innerHTML = data.hobby
+        }
+
+        let observer = new Observer(data)
+        let dataKeys = Object.keys(data);
+        for (let i = 0; i < dataKeys.length; i++) {
+            let watch = new Watcher(data, 'name', render)
+        }
+        
+        let watch1 = new Watcher(data, 'blog', render1)
+        let watch2 = new Watcher(data, 'hobby', render2)
+ 
+        // data.name = "王五"
+
+    </script>
+</body>
+
+</html>

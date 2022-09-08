@@ -1,0 +1,1680 @@
+canvas {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.CoinsStoretitleli {
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.Mbile_mennus {
+  display: none;
+}
+
+.mennus {
+  width: 40px;
+  position: absolute;
+  z-index: 997;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.content {
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  padding-bottom: 105px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+  background-color: #ffe300;
+}
+
+.menu-footer {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* bottom: -50px; */
+  bottom: 0;
+  height: 40px;
+}
+
+.menu-footer div {
+  float: left;
+  margin: 0px 15px;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+}
+
+.weblogo {
+  width: 100px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.menu-footer div a {
+  color: #333;
+  font-size: 16px;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #242323;
+  font-family: avenir demi;
+  margin-top: 25px;
+}
+
+.content h4 {
+  font-size: 18px;
+  color: #242323;
+  font-family: avenir demi;
+  margin-top: 30px;
+}
+
+.content .text {
+  font-size: 16px;
+  color: #a19c9b;
+  font-family: avenir regular;
+  margin-top: 20px;
+  text-align: justify;
+}
+.mennusClose {
+  width: 40px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.mennusList {
+  margin-top: 10%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mennusList div {
+  padding: 15px 0px;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.mennusList div a {
+  color: #000;
+}
+
+.Stopbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(7, 0, 44, 0.75);
+}
+
+.Stopboxdiv {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: #000 !important;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+.bodyclick {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+}
+
+.bodyclickZindex {
+  z-index: 1999;
+}
+
+.payplysicon {
+  width: 60px;
+  margin: 0px auto;
+}
+
+.payplystxts {
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.Nopower {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Nopower div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0) 19%, hsla(0, 0%, 0%, 0.2) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#e6000000', GradientType=1);
+}
+.payType {
+  width: 360px;
+  padding: 10px;
+}
+
+.paypadding {
+  padding: 20px 12px;
+}
+
+.payIcon {
+  width: 120px;
+  padding-top: 10px;
+}
+
+.payIconS {
+  width: 98px;
+  height: 42px;
+}
+
+.payIconclose {
+  width: 24px;
+  float: right;
+  cursor: pointer;
+}
+
+.payIconback {
+  width: 24px;
+  float: left;
+  cursor: pointer;
+}
+
+.payItem {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.payIconTop {
+  padding: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.payTypeButton {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 8px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  background-color: #ffe300;
+}
+
+.index {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.indexleft {
+  position: relative;
+  height: 100%;
+}
+
+.indexleftauto {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.indexleftbox {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.indexleftbox_logo {
+  width: 120px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+.indexleftbox_logo img {
+  border-radius: 35px;
+}
+
+.indexleftbox_txts {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.indexleftbox_txt {
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.indexleftbox_txti {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #18ff38;
+  margin-right: 8px;
+}
+
+.indexposition {
+  width: 388px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.indexposition_left {
+  position: absolute;
+  /* left: 0px; */
+}
+
+.indexposition_right {
+  position: absolute;
+  right: 0px;
+}
+
+.indexleftbox_txheight {
+  height: 60px;
+}
+
+.indexleftbox_img {
+  width: 162px;
+  cursor: pointer;
+}
+
+.indexleftbox_img:hover {
+  width: 170px;
+}
+
+.indexleftbox_img_margin {
+  margin-left: 48px;
+}
+
+.indexleftbox_margin {
+  margin-top: 40px;
+}
+
+.indexleftfoot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 24px;
+  padding-right: 24px;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.report_done_des {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 24px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+.indexleftbutton {
+  height: 152px;
+  margin-left: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.startbuttonbuttonCl {
+  width: 100%;
+  margin: 0px;
+  height: 152px;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.report {
+  width: 52px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 999;
+  cursor: pointer;
+}
+.nextbuttonbuttonCl {
+  width: 100%;
+  margin: 0px;
+  height: 152px;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
+.stopbuttonbuttonCl {
+  width: 100%;
+  margin: 0px;
+  height: 152px;
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.stopbuttonbuttonCl:hover {
+  width: 101%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bottonfelx {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.startbutton {
+  background-color: #ffe300;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.startbutton:hover {
+  width: 101%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.startbuttonOnclik {
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nextbuttonOnclik {
+  opacity: 0.5;
+  border-radius: 8.4px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffd300;
+}
+
+.nextbuttonOnclik:hover {
+  opacity: 0.5;
+  border-radius: 8.4px;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffd300;
+}
+
+.nextbuttonOncliks {
+  opacity: 1 !important
+}
+
+.Couplebutton {
+  background-color: #ff9e00;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Couplebutton:hover {
+  width: 101%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.CoupleImg {
+  width: 48px;
+  margin: 0px auto;
+}
+
+.Couplebuttontxt {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.buttontxt {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.indexrightbj {
+  background-color: rgba(205, 205, 205, 0.18);
+}
+
+.indexright {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 199;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.loading_icon {
+  width: 100px;
+  margin: 0px auto;
+  text-align: center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.singin {
+  width: 101px;
+  margin: 15px;
+  float: right;
+  padding: 12px 27px;
+  border-radius: 8px;
+  background-color: #ffe300;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+
+.indexrighttop {
+  padding: 20px;
+  height: 90px;
+  overflow-x: hidden;
+  flex-direction: column-reverse;
+}
+
+.indexrighttop_txt {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.indexrighttopList {
+  margin-top: 15px;
+}
+
+.indexrighttopList div {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.indexrighttopList div span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.indexrighttopList div:nth-child(2n) {
+  color: #ff00b9;
+}
+
+.indexrighttopList div:nth-child(2n-1) {
+  color: #18beff;
+}
+
+.indexrightfootbox {
+  position: relative;
+}
+
+.indexrightfoots {
+  margin: 0px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 20px;
+  padding-right: 15px;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.indexrightfoot {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 20px;
+}
+
+.indexrightfootinput {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fff;
+  border: 0px;
+}
+
+.indexrightfootbutton {
+  border: 0px;
+  padding: 3px 8px 2px;
+  border-radius: 14.5px;
+  background-color: #ffe300;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.singinpopup {
+  width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.singinpopup_video {
+  width: 378px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.singinpopup_close {
+  width: 24px;
+  float: right;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.singinpopup_logo {
+  width: 72px;
+  margin: 0px auto;
+}
+
+.singinpopup_txt {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #404040;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.singinpopup_button {
+  width: 273px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 0px auto;
+  border-radius: 20px;
+  border: solid 2px rgba(0, 0, 0, 0.06);
+  margin-top: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.singinpopup_button_icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.singinpopup_button_google {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #404040;
+}
+
+.singinpopup_button_fbbj {
+  background-color: #1877f2;
+}
+
+.singinpopup_button_fb {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.userbox {
+  clear: both;
+  margin: 15px;
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userName {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.userInfobj {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.userInfo {
+  width: 391px;
+  z-index: 999;
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  padding: 20px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.userInfotop {
+  padding: 36px 10px 36px 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(285deg, #fc6a65 100%, #ff9564, #ff9564);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userInfoClose {
+  width: 24px;
+  float: right;
+  clear: both;
+  cursor: pointer;
+}
+
+.userInfotopico {
+  width: 24px;
+}
+
+.userInfotopicos {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.userInfotoptitle {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.userInfotopnum {
+  margin: 0px 10px;
+}
+
+.divList {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.divListerror {
+  border: 1px solid #ffe300
+}
+
+.divListsex {
+  background: #fff;
+  border-radius: 8px;
+  width: 140px;
+}
+
+.divListsexithday {
+  background: #fff;
+  border-radius: 8px;
+  width: 140px;
+  height: 220px;
+  overflow-x: hidden;
+}
+
+.divListsex_item {
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+.colors {
+  color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.Signoutbox {
+  padding-top: 25px;
+}
+
+.Signout {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.userInfobutton {
+  padding: 10px 10px 10px 16px;
+  border-radius: 8px;
+  background-color: #ffe300;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.userInfofromtit {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.2);
+  margin-right: 15px;
+}
+
+.userInfoinput {
+  width: 100%;
+  border: 0px;
+  padding: 5px 0px;
+  border: 0px;
+  background: none;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+.userInfoterr {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff9500;
+  margin-top: 10px;
+}
+
+.userInfomargin {
+  margin-left: 10px;
+}
+
+.CoinsStore {
+  width: 302px;
+  padding: 16px;
+}
+
+.CoinsStoretitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.CoinsStoreclose {
+  width: 24px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+
+.CoinsStoreList {
+  padding: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(255, 227, 0, 0.2);
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.CoinsStoreList:hover {
+  border: 1px solid rgba(255, 227, 0, 1);
+}
+
+.CoinsStoreListNum {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1b1b1b;
+  margin-left: 10px;
+}
+
+.CoinsStoreListMon {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ff9500;
+}
+
+.CoupleChonse {
+  width: 302px;
+  padding: 10px;
+  padding-top: 0px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  z-index: 2000;
+  bottom: 10px;
+  transform: translate(-50%, 0%);
+}
+
+.CoupleChonseList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 16px 6px 8px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.CoupleChonseList:hover {
+  border: 1px solid rgba(255, 227, 0, 1);
+  background-color: rgba(255, 227, 0, 0.09);
+}
+
+.CoupleChonseListIco {
+  width: 35px;
+}
+
+.CoupleChonseListTxt {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1b1b1b;
+  margin-left: 10px;
+}
+
+.meVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.meVideotop {
+  position: absolute;
+  right: 15px;
+  z-index: 209;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.setsex {
+  width: 302px;
+  overflow: hidden;
+}
+
+.setsextitle {
+  padding: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+.setsexList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.setsexListItem {
+  margin: 20px;
+  margin-top: 0px;
+  padding: 14px 0px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.setsexListItemText {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1b1b1b;
+}
+
+.setsexListico {
+  width: 64px;
+  margin: 0px auto;
+}
+
+.setsexclose {
+  width: 24px;
+  float: right;
+  margin: 20px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.setsexListbutton {
+  margin: 20px;
+  margin-top: 0px;
+  border-radius: 8px;
+  padding: 15px 0px;
+  background-color: #ffe300;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.setsexListcheod {
+  border: 1px solid #ffe300;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -1px;
+  left: -1px;
+  border-radius: 8px;
+}
+
+.setsexListcheimg {
+  width: 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.setsexListcheimg img {
+  border-radius: 0px 8px 0px 8px;
+}
+
+.wsuserinfobox {
+  width: 391px;
+}
+
+.wsuserinfo {
+  padding: 0px 15px;
+}
+
+.lasticons {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+.lasticonsicos {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.lasticons_txt {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+  margin-left: 5px;
+}
+
+.collectbj {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .7);
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.collectbox {
+  width: 320px;
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  top: 30px;
+  z-index: 9999999;
+}
+
+.collecttop {
+  width: 40px;
+  height: 24px;
+  overflow: hidden;
+  float: right;
+}
+
+.collectcenter {
+  clear: both;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background-color: hsla(0, 0%, 100%, .97);
+  border-radius: 25px 0px 25px 25px;
+}
+
+.collectcolose {
+  width: 40px;
+  float: right;
+  cursor: pointer;
+}
+
+.collecttitle {
+  clear: both;
+  width: 100%;
+  font-size: 25px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.collectdisp {
+  clear: both;
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+.collectfoot {
+  padding-top: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.collectfoot_ico {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.collectfoot_txt {
+  font-size: 16px;
+}
+
+@media screen and (max-width:800px) {
+  .pageType {
+      width: 50% !important;
+  }
+  .mennusList div {
+    font-size: 16px;
+  }
+  footer {
+      display: none;
+  }
+  .Mbile_mennus {
+      width: 100%;
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      padding: 15px;
+      box-sizing: border-box;
+      top: 0px;
+      left: 0px;
+      background: #fff;
+      border-bottom: 1px solid #f3f3f3;
+  }
+  .content {
+      padding-top: 60px;
+  }
+  .weblogo {
+      display: none;
+  }
+  .pagelogo {
+      width: 40px;
+      margin-top: 0px;
+      float: left;
+  }
+  .pagemenus {
+      width: 30px;
+      padding-top: 10px;
+      float: right;
+  }
+  .mennus {
+      z-index: 1000;
+      display: none;
+  }
+  .wsuserinfoboxs {
+    width: 90%;
+  }
+
+  .wsuserinfobox {
+    width: 100%;
+  }
+  .index {
+      display: block;
+  }
+  .indexleft {
+    height: 50%;
+  }
+
+  .indexleftauto {
+    position: initial;
+    height: 100%;
+  }
+  #audience-video {
+      position: absolute;
+  }
+  .indexleftbox {
+    top: 0px;
+    height: 100%;
+  }
+
+  .indexleftbox_logo {
+    width: 60px;
+    margin-top: 60px;
+  }
+
+  .indexposition {
+    width: 100%;
+  }
+
+  .indexposition_left {
+    display: none;
+  }
+
+  .indexposition_right {
+    right: inherit;
+  }
+
+  .indexleftfoot {
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    z-index: 2098;
+    width: 100%;
+    padding: 10px 0px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .indexleftbutton {
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .CoupleImg {
+    display: none;
+  }
+
+  .buttontxt {
+    font-size: 16px;
+  }
+
+  .Couplebuttontxt {
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .stopbuttonbuttonCl {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .singin {
+    width: 60px;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .userName {
+      display: none;
+  }
+  .meVideotop {
+    right: 0;
+    z-index: 999;
+  }
+
+  .CoupleChonse {
+    position: fixed;
+    bottom: 75px;
+  }
+  .userInfo {
+      width: 90%;
+      right: 5%;
+      top: 10%;
+      box-sizing: border-box;
+  }
+  .userInfotop {
+    padding: 16px 10px 16px 16px;
+  }
+
+  .divList {
+    padding: 5px 10px;
+  }
+
+  .userInfofromtit {
+    font-size: 16px;
+  }
+
+  .userInfotoptitle {
+    font-size: 16px;
+  }
+
+  .singinpopup {
+    width: 100%;
+    padding: 0px 10px 30px 10px;
+    box-sizing: border-box;
+  }
+
+  .singinpopup_video {
+    display: none;
+  }
+
+  .CoinsStore {
+    width: 300px;
+  }
+
+  .indexrightfootbox {
+    z-index: 999;
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .indexrighttop_txt {
+    color: #fff;
+  }
+
+  .indexrighttop {
+    height: auto;
+  }
+
+  .userInfotopico {
+    width: 20px;
+  }
+
+  .userInfotopicos {
+    width: 24px;
+  }
+
+  .nextbuttonbuttonCl {
+    height: 40px;
+  }
+  .report {
+      width: 40px;
+      left: 15px;
+  }
+  .startbuttonbuttonCl {
+    height: 40px;
+  }
+
+  .Signout {
+    font-size: 16px;
+  }
+  .meVideo {
+      height: 50%;
+      top: 50%;
+  }
+  .collectbox {
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    top: 30px;
+    z-index: 9999999;
+  }
+  .collectboxs {
+    width: 90%;
+    height: 220px;
+    position: fixed;
+    bottom: 60px;
+    right: 5%;
+    z-index: 9999999;
+  }
+
+  .collecttops {
+    width: 40px;
+    height: 24px;
+    overflow: hidden;
+    float: none;
+    margin: 0px auto;
+  }
+
+  .collectcenters {
+    clear: both;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: hsla(0, 0%, 100%, .97);
+    border-radius: 25px;
+  }
+
+  .collectcolose {
+    width: 40px;
+    float: right;
+    cursor: pointer;
+  }
+
+  .collecttitle {
+    clear: both;
+    width: 100%;
+    font-size: 25px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+
+  .collectdisp {
+    clear: both;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+  }
+
+  .collectfoot {
+    padding-top: 25px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .collectfoot_ico {
+    width: 30px;
+    margin-right: 8px;
+  }
+
+  .collectfoot_txt {
+    font-size: 15px;
+  }
+
+  .indexrightfoot {
+    display: none;
+  }
+  }
